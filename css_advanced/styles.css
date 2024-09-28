@@ -12,7 +12,7 @@ body {
 .backimg{
     background: url('./images/background.png') no-repeat center/cover;
 }
-header.hero-section {
+.hero-section {
     color: white;
     text-align: center;
     padding: 50px;
@@ -20,8 +20,9 @@ header.hero-section {
 
 nav {
     display: flex;
+    margin: auto;
+    width: 90%;
     justify-content: space-between;
-    align-items: center;
 }
 
 nav ul {
@@ -144,7 +145,12 @@ nav ul li a {
     padding: 20px;
     text-align: justify;
 }
-
+.footer-content {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    justify-content: space-between;
+}
 footer {
     background-color: #1a1a1a;
     color: white;
