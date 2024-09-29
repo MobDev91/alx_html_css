@@ -1,0 +1,147 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.backimg {
+    background: url('./images/background.png') no-repeat center/cover;
+}
+
+.head-menu {
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+nav {
+    display: flex;
+    margin: auto;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 60px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+    color: #FF6565;
+}
+
+.head-content {
+    margin-top: 150px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF6565;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: medium;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.cta-button:hover,
+.cta-button:active {
+    opacity: 0.9;
+}
+
+.head-content > p {
+    text-align: center;
+    margin: auto;
+    width: 60%;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+/* Media Query for Tablets */
+@media only screen and (max-width: 1024px) {
+
+    .menu-icon {
+        display: none;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    .head-content {
+        margin-top: 100px;
+    }
+
+    .head-content > p {
+        width: 80%;
+    }
+
+    .cta-button {
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+}
+
+/* Media Query for Phone */
+@media only screen and (max-width: 767px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    #menu-toggle:checked + .menu-icon + ul {
+        display: flex;
+    }
+
+    .head-content {
+        margin-top: 100px;
+    }
+
+    .head-content > p {
+        width: 80%;
+    }
+
+    .cta-button {
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+}
